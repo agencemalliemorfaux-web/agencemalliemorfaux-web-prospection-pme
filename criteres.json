@@ -1,0 +1,158 @@
+{
+  "zone_prospection": {
+    "ville_centre": "Saint-André-de-Sangonis",
+    "departement": "Hérault (34)",
+    "region": "Occitanie",
+    "rayon_km": 20,
+    "villes_cibles": [
+      "Saint-André-de-Sangonis",
+      "Clermont-l'Hérault",
+      "Gignac",
+      "Lodève",
+      "Montagnac",
+      "Paulhan",
+      "Canet",
+      "Saint-Guiraud",
+      "Aniane",
+      "Gigean",
+      "Mèze",
+      "Pézenas",
+      "Montpeyroux"
+    ]
+  },
+
+  "criteres_site": {
+    "priorite_1_critique": {
+      "label": "Site inexistant ou introuvable",
+      "description": "PME sans aucune présence web détectable (ni site, ni Google My Business actif)",
+      "score": 5,
+      "signaux": [
+        "Absent de Google Maps",
+        "Pas de site dans les résultats de recherche",
+        "Présence uniquement sur Pages Jaunes sans site"
+      ]
+    },
+    "priorite_2_urgente": {
+      "label": "Site ancien et non responsive",
+      "description": "Site datant d'avant 2018, non adapté mobile, design dépassé",
+      "score": 4,
+      "signaux": [
+        "Design Flash ou table HTML visible",
+        "Pas de certificat SSL (HTTP uniquement)",
+        "Score mobile Google inférieur à 50",
+        "Copyright footer < 2018",
+        "Police Comic Sans ou Times New Roman",
+        "Fond avec texture ou dégradé années 2000"
+      ]
+    },
+    "priorite_3_haute": {
+      "label": "Site mal construit",
+      "description": "Site récent mais non fonctionnel ou contre-productif",
+      "score": 3,
+      "signaux": [
+        "Aucune page de contact fonctionnelle",
+        "Numéro de téléphone non cliquable sur mobile",
+        "Pas de mentions légales",
+        "Images de mauvaise qualité ou pixelisées",
+        "Chargement > 5 secondes",
+        "Site construit sur free.fr ou monsite.com"
+      ]
+    }
+  },
+
+  "secteurs_cibles": {
+    "tier_1_prioritaire": {
+      "label": "Secteurs à démarcher en premier — fort potentiel, budget présent",
+      "secteurs": [
+        {
+          "nom": "Domaines viticoles et caves",
+          "raison": "Région viticole majeure, image de marque cruciale, budget marketing existant",
+          "mots_cles_recherche": ["domaine viticole", "cave coopérative", "vigneron", "vin hérault", "AOC Pic Saint-Loup", "AOC Clairette du Languedoc"],
+          "budget_site_estime": "1500€ - 4000€",
+          "argument_cle": "Vendre en ligne et attirer les touristes oenotouristiques"
+        },
+        {
+          "nom": "Chambres d'hôtes et gîtes",
+          "raison": "Tourisme rural en plein essor, réservations directes = économie commissions Booking",
+          "mots_cles_recherche": ["chambre hôtes hérault", "gîte rural", "location vacances", "hébergement insolite"],
+          "budget_site_estime": "1200€ - 2500€",
+          "argument_cle": "Chaque réservation directe économise 15-20% de commission"
+        },
+        {
+          "nom": "Artisans du bâtiment",
+          "raison": "Très peu numérisés, forte demande locale, bouche-à-oreille insuffisant seul",
+          "mots_cles_recherche": ["plombier", "électricien", "maçon", "menuisier", "couvreur", "carreleur", "peintre"],
+          "budget_site_estime": "800€ - 1800€",
+          "argument_cle": "Apparaître en premier sur Google quand quelqu'un cherche un artisan en urgence"
+        },
+        {
+          "nom": "Professionnels de santé libéraux",
+          "raison": "Besoin de visibilité + prise de RDV en ligne, cabinet souvent sans site",
+          "mots_cles_recherche": ["kinésithérapeute", "ostéopathe", "infirmier libéral", "psychologue", "naturopathe", "podologue"],
+          "budget_site_estime": "1000€ - 2000€",
+          "argument_cle": "Réduire les appels pour RDV grâce à la prise de rendez-vous en ligne"
+        }
+      ]
+    },
+    "tier_2_secondaire": {
+      "label": "Secteurs intéressants — bon volume, cycle de vente un peu plus long",
+      "secteurs": [
+        {
+          "nom": "Restaurants et traiteurs",
+          "mots_cles_recherche": ["restaurant", "brasserie", "pizzeria", "traiteur", "épicerie fine"],
+          "budget_site_estime": "800€ - 1500€",
+          "argument_cle": "Afficher le menu, les horaires, et recevoir des réservations en ligne"
+        },
+        {
+          "nom": "Commerces de proximité",
+          "mots_cles_recherche": ["boulangerie", "fleuriste", "coiffeur", "pressing", "auto-école"],
+          "budget_site_estime": "600€ - 1200€",
+          "argument_cle": "Être trouvé sur Google Maps avant la concurrence"
+        },
+        {
+          "nom": "Agriculture et vente directe",
+          "mots_cles_recherche": ["producteur local", "AMAP", "vente directe", "maraîcher", "apiculteur", "éleveur"],
+          "budget_site_estime": "800€ - 1500€",
+          "argument_cle": "Vendre en ligne et communiquer sur les marchés"
+        },
+        {
+          "nom": "Garages et auto",
+          "mots_cles_recherche": ["garage automobile", "mécanicien", "carrossier", "contrôle technique"],
+          "budget_site_estime": "700€ - 1500€",
+          "argument_cle": "Devis en ligne et prise de RDV pour entretien"
+        }
+      ]
+    },
+    "tier_3_opportuniste": {
+      "label": "À saisir si trouvé facilement, mais ne pas y consacrer du temps de prospection",
+      "secteurs": [
+        "Associations sportives et culturelles",
+        "Courtiers et agents immobiliers indépendants",
+        "Coachs et consultants indépendants",
+        "Photographes et artistes"
+      ]
+    }
+  },
+
+  "instructions_recherche": {
+    "sources_a_scanner": [
+      "Google Maps (recherche par secteur + ville)",
+      "Pages Jaunes (pagesjaunes.fr)",
+      "Annuaire des entreprises (societe.com)",
+      "Google Search 'métier + ville' — regarder les résultats absents"
+    ],
+    "nb_prospects_par_run": 8,
+    "format_sortie": "prospects_YYYY-MM-DD.md",
+    "champs_par_prospect": [
+      "nom_entreprise",
+      "secteur",
+      "ville",
+      "telephone",
+      "site_actuel_url",
+      "problemes_detectes",
+      "score_priorite",
+      "template_a_utiliser",
+      "message_personnalise_genere"
+    ]
+  }
+}
